@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
@@ -34,31 +34,39 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="photos/hero-image.avif" alt="Green Air Landscape">
+                <img src="/static/photos/hero-image.avif" alt="Green Air Landscape">
             </div>
         </section>
 
         <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">
-                    <img src="photos/eco-friendly-icon.svg" alt="Eco-Friendly Icon">
+                    <img src="/static/photos/eco-friendly-icon.svg" alt="Eco-Friendly Icon">
                 </div>
                 <h3>Eco-Friendly</h3>
                 <p>Green initiatives help improve air quality and create a healthier environment.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
-                    <img src="photos/cost-savings-icon.svg" alt="Cost Savings Icon">
+                    <img src="/static/photos/cost-savings-icon.svg" alt="Cost Savings Icon">
                 </div>
                 <h3>Save on Healthcare</h3>
                 <p>Better air quality can lead to fewer health issues and reduced medical costs.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
-                    <img src="photos/low-maintenance-icon.svg" alt="Low Maintenance Icon">
+                    <img src="/static/photos/low-maintenance-icon.svg" alt="Low Maintenance Icon">
                 </div>
                 <h3>Low Maintenance</h3>
                 <p>Green air solutions are designed to be efficient and easy to maintain.</p>
+            </div>
+        </section>
+
+        <section class="air-quality">
+            <h2>Air Quality Visualization</h2>
+            <!-- Place to display the air quality visualization -->
+            <div class="air-quality-plot">
+                <img src="{{ url_for('static', filename='air_quality_plot.png') }}" alt="Air Quality Plot">
             </div>
         </section>
 
@@ -66,7 +74,7 @@
             <h2>Our Projects</h2>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="photos/project1.jpg" alt="Urban Green Spaces">
+                    <img src="/static/photos/project1.jpg" alt="Urban Green Spaces">
                 </div>
                 <div class="project-details">
                     <h3>Urban Green Spaces</h3>
@@ -76,7 +84,7 @@
             </div>
             <div class="project-card" style="padding-left: 20px;">
                 <div class="project-image">
-                    <img src="photos/project2.avif" alt="Public Awareness Campaigns">
+                    <img src="/static/photos/project2.avif" alt="Public Awareness Campaigns">
                 </div>
                 <div class="project-details">
                     <h3>Public Awareness Campaigns</h3>
@@ -86,7 +94,7 @@
             </div>
             <div class="project-card" style="padding-right: 60px;">
                 <div class="project-image">
-                    <img src="photos/project3.jpg" alt="Join Our Movement">
+                    <img src="/static/photos/project3.jpg" alt="Join Our Movement">
                 </div>
                 <div class="project-details">
                     <h3>Join Our Movement</h3>
@@ -100,7 +108,7 @@
             <h2>Get Involved</h2>
             <div class="involvement-card">
                 <div class="involvement-icon">
-                    <img src="photos/volunteer-icon.svg" alt="Volunteer Icon">
+                    <img src="/static/photos/volunteer-icon.svg" alt="Volunteer Icon">
                 </div>
                 <h3>Become a Volunteer</h3>
                 <p>Join our team of dedicated volunteers and help us improve air quality in your community. Your efforts count.</p>
@@ -108,7 +116,7 @@
             </div>
             <div class="involvement-card">
                 <div class="involvement-icon">
-                    <img src="photos/share-icon.svg" alt="Share Icon">
+                    <img src="/static/photos/share-icon.svg" alt="Share Icon">
                 </div>
                 <h3>Share Information</h3>
                 <p>Help us spread the word about the importance of protecting air quality by sharing our news and posts on social media.</p>
@@ -116,7 +124,7 @@
             </div>
             <div class="involvement-card">
                 <div class="involvement-icon">
-                    <img src="photos/donate-icon.svg" alt="Donate Icon">
+                    <img src="/static/photos/donate-icon.svg" alt="Donate Icon">
                 </div>
                 <h3>Make a Donation</h3>
                 <p>Your donations help fund our projects and campaigns aimed at improving air quality for everyone.</p>
@@ -124,7 +132,7 @@
             </div>
             <div class="involvement-card">
                 <div class="involvement-icon">
-                    <img src="photos/campaign-icon.svg" alt="Campaign Icon">
+                    <img src="/static/photos/campaign-icon.svg" alt="Campaign Icon">
                 </div>
                 <h3>Participate in Campaigns</h3>
                 <p>Get involved in our campaigns to advocate for cleaner air.</p>
@@ -146,14 +154,14 @@
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="#"><img src="photos/facebook-icon.svg" alt="Facebook"></a>
-                <a href="#"><img src="photos/twitter-icon.svg" alt="Twitter"></a>
-                <a href="#"><img src="photos/instagram-icon.svg" alt="Instagram"></a>
+                <a href="#"><img src="/static/photos/facebook-icon.svg" alt="Facebook"></a>
+                <a href="#"><img src="/static/photos/twitter-icon.svg" alt="Twitter"></a>
+                <a href="#"><img src="/static/photos/instagram-icon.svg" alt="Instagram"></a>
             </div>
         </div>
         <p>&copy; 2024 GreenAir. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/static/main.js"></script>
 </body>
 </html>
