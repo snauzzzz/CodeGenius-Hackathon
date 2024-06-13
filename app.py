@@ -5,6 +5,9 @@ import os
 
 app = Flask(__name__)
 
+# Retrieve API key from environment variable
+api_key = os.environ.get('API_KEY')
+
 @app.route('/')
 def index():
     # Fetch air quality data for different cities
@@ -31,5 +34,6 @@ def index():
     plt.savefig(plot_path)
 
     return render_template('index.html', plot_path=os.path.basename(plot_path))
+
 if __name__ == '__main__':
     app.run(debug=True)
